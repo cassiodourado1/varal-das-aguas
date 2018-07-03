@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #1b546f;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.menuHeader {
+  flex: 1;
+  display: flex;
+  list-style-type: none;
+}
+
+.itemMenu {
+  padding: 1rem 0.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
