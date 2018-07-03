@@ -1,3 +1,26 @@
+.header {
+    background-color: #1b546f;
+    height: 50px;
+    color: white;
+  }
+  
+  .menuHeader {
+    flex: 1;
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+  }
+  
+  .itemMenu {
+    padding: 1rem 0.5rem;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 .title {
     font-weight: 900;

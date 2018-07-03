@@ -5,16 +5,15 @@ import styles from './styles.css';
 
 
 class Header extends Component {
-    state = {  }
     render() {
         return (
-        <header className="header">
-            <nav className="nav">
-                <ul className="menuHeader">
-                    <li className="itemMenu"><a className="">INÍCIO</a></li>
-                    <li className="itemMenu"><a className="">O CONCURSO</a></li>
-                    <li className="itemMenu"><a className="">SOBRE</a></li>
-                    <li className="itemMenu"><a className="">REGRAS</a></li>
+        <header className={styles.header}>
+            <nav className={styles.nav}>
+                <ul className={styles.menuHeader}>
+                    <li className={styles.itemMenu}><a>INÍCIO</a></li>
+                    <li className={styles.itemMenu}><a>O CONCURSO</a></li>
+                    <li className={styles.itemMenu}><a>SOBRE</a></li>
+                    <li className={styles.itemMenu}><a>REGRAS</a></li>
                 </ul>
             </nav>
         </header>
