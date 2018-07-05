@@ -9,11 +9,11 @@ class Header extends Component {
         return (
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <ul className={styles.menuHeader}>
-                    <li className={styles.itemMenu}><a>INÍCIO</a></li>
-                    <li className={styles.itemMenu}><a>O CONCURSO</a></li>
-                    <li className={styles.itemMenu}><a>SOBRE</a></li>
-                    <li className={styles.itemMenu}><a>REGRAS</a></li>
+                <ul className={styles.menu}>
+                    <li className={styles.itemMenu}><a className={styles.link} href="#top">INÍCIO</a></li>
+                    <li className={styles.itemMenu}><a className={styles.link} href="#concourse">O CONCURSO</a></li>
+                    <li className={styles.itemMenu}><a className={styles.link} href="#about">SOBRE</a></li>
+                    <li className={styles.itemMenu}><a className={styles.link} href="#rules">REGRAS</a></li>
                 </ul>
             </nav>
         </header>
