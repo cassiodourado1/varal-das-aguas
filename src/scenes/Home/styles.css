@@ -4,6 +4,7 @@
     --bg-home: #faefde;
     --font: #666;
     --border: #dbdbdb;
+    --send-file: #337ab7;
 }
 
 .home {
@@ -108,12 +109,24 @@
 .boxModal {
     width: 600px; 
     height: auto;
-    background: #fff;
+    background: var(--branco);
     display: grid;
+    padding-bottom: 0.5rem;
 }
 
 .headerModal {
-    border-bottom: 1px solid 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: thin solid  var(--border);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.close{
+    background: orangered;
+    border-color: red;
+    color: var(--branco);
 }
 
 .boxInputsModal {
@@ -156,4 +169,44 @@
 	top: -50%;
 	z-index: 2;
 	transition: 0.2s;  
+}
+
+.uploadFoto {
+    padding: 0 1rem 0.5rem 1rem;
+}
+
+.boxTermsOfUse {
+    padding: 0.5rem 1rem 1.2rem;
+    border-bottom: 1px #ccc solid ;
+}
+
+.titleModal {
+    margin: 0 auto;
+    padding-bottom: 0.3rem;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.termOfUse {
+    border: 1px #ccc solid ;
+    height: 200px;
+    overflow-x: auto; 
+    padding: 0rem 0 0.5rem 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.footerModal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+
+.btEnviar {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    width: 70px;
+    background: var(--send-file);
+    color: var(--branco);
 }

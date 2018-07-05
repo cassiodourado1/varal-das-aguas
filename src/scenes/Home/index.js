@@ -31,24 +31,45 @@ class Home extends Component {
             {this.state.visible &&
                 <div className={styles.modal}>
                     <div className={styles.boxModal}>
+                        <div className={styles.headerModal}>
+                            <h3>Cadastro</h3>
+                            <button className={styles.close} onClick={this.toggleModal}>X</button>
+                        </div>
                         <div className={styles.boxInputsModal}>
                             <div className={styles.itemInput}>
-                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Nome Colaborador" />
-                                <label for="nomeColaborador" className={styles.labelInput}>Nome Colaborador</label>
+                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Insira seu nome" />
+                                <label for="nomeColaborador" className={styles.labelInput}>Nome do Colaborador</label>
                             </div>
                             <div className={styles.itemInput}>
-                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Nome Colaborador" />
-                                <label for="nomeColaborador" className={styles.labelInput}>Nome Colaborador</label>
+                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Insira o nome da foto" />
+                                <label for="nomeColaborador" className={styles.labelInput}>Nome da Foto</label>
                             </div>
                             <div className={styles.itemInput}>
-                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Nome Colaborador" />
-                                <label for="nomeColaborador" className={styles.labelInput}>Nome Colaborador</label>
+                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Insira o local da foto" />
+                                <label for="nomeColaborador" className={styles.labelInput}>Local da Foto</label>
                             </div>
                             <div className={styles.itemInput}>
-                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Nome Colaborador" />
-                                <label for="nomeColaborador" className={styles.labelInput}>Nome Colaborador</label>
+                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Mes/Dia/Anoo" />
+                                <label for="nomeColaborador" className={styles.labelInput}>Data de registro</label>
                             </div>
                         </div>
+                        <div className={styles.uploadFoto}>
+                            <h3 className={styles.titleModal}>Anexar Foto</h3>
+                            <input type="file" name="foto"accept="image/png, image/jpeg"  /> 
+                        </div>
+                        <div className={styles.boxTermsOfUse}>
+                            <h3 className={styles.titleModal}>Termos de uso</h3>
+                            <div className={styles.termOfUse}>
+                                <p>Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Cevadis im ampola pa arma uma pindureta.</p>
+                                <p>Detraxit consequat et quo num tendi nada. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Leite de capivaris, leite de mula manquis sem cabeça. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                <p>Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Diuretics paradis num copo é motivis de denguis. Paisis, filhis, espiritis santis. In elementis mé pra quem é amistosis quis leo.</p>
+                            </div>
+                            <input type="checkbox" value="0" name="aceptTerms" id="aceptTerms" />
+                            <label className={styles.titleModal} for="aceptTerms">Li e concordo com os termos</label>
+                        </div>
+                        <div className={styles.footerModal}>
+                            <button className={styles.btEnviar} onClick={this.toggleModal}>Enviar</button>
+                        </div>                        
                     </div>
                 </div>
             }
