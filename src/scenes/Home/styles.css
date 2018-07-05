@@ -90,6 +90,7 @@
 
 .textSection {
     font-size: 14px;
+    width: 100%;
 }
 
 /* MODAL */
@@ -127,6 +128,7 @@
     background: orangered;
     border-color: red;
     color: var(--branco);
+    cursor: pointer;
 }
 
 .boxInputsModal {
@@ -209,4 +211,5 @@
     width: 70px;
     background: var(--send-file);
     color: var(--branco);
+    cursor: pointer;
 }
