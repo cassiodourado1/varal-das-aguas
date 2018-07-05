@@ -1,3 +1,9 @@
+:root {
+    --site-name: #797878;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
 .fullBanner {
     width: 100vw;
     height: calc(100vh - 50px);
@@ -45,7 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
  span:before {
@@ -75,6 +81,16 @@ span:after {
 
 
 .siteName {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    font-family: 'Merienda', cursive;
+    font-size: 42px;
+    line-height: 36px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;  
+    color: var(--site-name);
+}
+
+.siteDescription {
+    margin: 0 auto;
+    padding: 0 1rem 1rem 1rem;
+    color: var(--site-name);
 }

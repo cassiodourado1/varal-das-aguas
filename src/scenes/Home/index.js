@@ -11,9 +11,47 @@ import styles from './styles.css';
 
 
 class Home extends Component {    
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          visible: false,          
+        };
+        
+        this.toggleModal = this.toggleModal.bind(this);
+     }
+
+    toggleModal() {
+        this.setState({ visible: !this.state.visible });
+        console.log('clucou');
+    }
     render() {
         return (
             <main className={styles.home}>
+            {this.state.visible &&
+                <div className={styles.modal}>
+                    <div className={styles.boxModal}>
+                        <div className={styles.boxInputsModal}>
+                            <div className={styles.itemInput}>
+                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Nome Colaborador" />
+                                <label for="nomeColaborador" className={styles.labelInput}>Nome Colaborador</label>
+                            </div>
+                            <div className={styles.itemInput}>
+                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Nome Colaborador" />
+                                <label for="nomeColaborador" className={styles.labelInput}>Nome Colaborador</label>
+                            </div>
+                            <div className={styles.itemInput}>
+                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Nome Colaborador" />
+                                <label for="nomeColaborador" className={styles.labelInput}>Nome Colaborador</label>
+                            </div>
+                            <div className={styles.itemInput}>
+                                <input type="text" name="nomeColaborador" id="nomeColaborador" className={styles.input} placeholder="Nome Colaborador" />
+                                <label for="nomeColaborador" className={styles.labelInput}>Nome Colaborador</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
                 <ScrollableAnchor id="top">
                     <FullBanner />
                 </ScrollableAnchor>
@@ -27,7 +65,7 @@ class Home extends Component {
                     
                     <section className={styles.boxInscricao}>
                         <EventInfo />
-                        <button className={styles.button}>Faça sua inscrição</button>                
+                        <button className={styles.button} onClick={this.toggleModal}>Faça sua inscrição</button>                
                     </section>
 
                     <ScrollableAnchor id="about">

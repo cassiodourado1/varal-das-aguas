@@ -8,7 +8,7 @@ const FullBanner = () => (
     <div className={styles.boxSiteName}>
       <span className={styles.box}>
         <h1 className={styles.siteName}>Varal das Águas</h1>
-        <h2 className={styles.description}>Concurso de Fotografia</h2>
+        <h2 className={styles.siteDescription}>Concurso de Fotografia</h2>
       </span>
     </div>
   </div>
