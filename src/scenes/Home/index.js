@@ -62,7 +62,7 @@ class Home extends Component {
                             Todas as fotos que retrate da temática água (tais como situação de secas ou excedentes hídricos, as belezas e os desafios de se trabalhar com os recursos hídricos etc.) serão bem vindas.
                         </p>
 
-                        <ul className={styles.textSection}>>
+                        <ul className={styles.textSection}>
                             <li>As fotos devem ser originais e sem alterações.</li>
                             <li>As fotos devem expor os ambientes visitados em inspeções técnicas realizadas durante inspeções pelo INEMA.</li>
                             <li>Fotografias que incluam pessoas serão desclassificadas.</li>
