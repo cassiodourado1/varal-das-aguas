@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 /* Presentation */
 import Header from './components/Header';
 import Home from './scenes/Home';
+import Footer from './components/Footer';
+
 /* Styles */
 import './App.css';
 
@@ -14,7 +16,7 @@ class App extends Component {
 
         <Header />
         <Home />
-
+        <Footer />
       </div>
     );
   }
