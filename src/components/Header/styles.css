@@ -3,6 +3,10 @@
     background-color: #1b546f;
     height: 50px;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   
   .menuHeader {
@@ -14,6 +18,7 @@
   
   .itemMenu {
     padding: 1rem 0.5rem;
+    cursor: pointer;
   }
   
   .nav {

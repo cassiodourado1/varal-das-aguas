@@ -1,5 +1,6 @@
 :root {
     --label: #2e8ebc;
+    --description: #fffefe;
 }
 
 .item {
@@ -22,5 +23,6 @@
 }
 
 .description {
+    color: var(--description);
     flex: 1;
 }

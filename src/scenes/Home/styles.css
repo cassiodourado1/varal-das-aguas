@@ -1,20 +1,16 @@
 :root {
     --azul: #1b546f;
     --branco: #FFF;
+    --bg-home: #faefde;
+    --font: #666;
 }
 
 .home {
     max-width: 100vw;
     overflow: hidden;
+    background: var(--bg-home);
+    color: var(--font);
 }
-
-/* .container {
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    
-    border: 1px red solid;
-} */
 
 .container {
     max-width: 960px;
@@ -22,29 +18,65 @@
     margin-top: -5rem;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: concurso inscriciao;
+    grid-template-areas: concurso inscriciao
+    sobre;
     grid-column-gap: 10px;
     background: #FFF;
+}
+
+.sections{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .concurso {
     grid-area: concurso;
     grid-column: 1 / 6;
+    grid-row: 1;
+    composes: sections;  
 }
 
-.boxInscricao {
-    grid-area: inscricao;
-    grid-column: 6 / 11;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.titleSection {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;    
 }
-
 
 .button {
     background: var(--azul);
     color:var(--branco);
     text-transform: uppercase;
     padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.boxInscricao {
+    grid-area: inscricao;
+    grid-column: 6 / 11; 
+    grid-row: 1; 
+    composes: sections;  
+}
+
+.sobre {
+    grid-area: sobre;
+    grid-row: 2;
+    grid-column: 1 / 11; 
+    composes: sections;  
+    border-top: 2px solid #dbdbdb;
+}
+
+.regras {
+    grid-area: sobre;
+    grid-row: 3;
+    grid-column: 1 / 11; 
+    composes: sections;  
+}
+
+.textSection {
+    font-size: 14px;
 }
