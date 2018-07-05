@@ -239,4 +239,13 @@
     .regras{
         grid-row: 4;
     }
+    .boxModal {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .boxInputsModal{
+        padding: 1rem;
+        grid-gap: 15px;
+    }
 }
