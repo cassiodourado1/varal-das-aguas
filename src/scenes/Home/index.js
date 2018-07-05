@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 /* Presentation */
 import FullBanner from './components/FullBanner';
-
+import EventInfo from './components/EventInfo';
 /* Styles */
 import styles from './styles.css';
 
@@ -11,9 +11,18 @@ import styles from './styles.css';
 class Home extends Component {    
     render() {
         return (
-            <div className={styles.home}>
+            <main className={styles.home}>
                 <FullBanner />
-            </div>
+                <div className={styles.container}>
+                    <section className={styles.concurso}>
+                        o concurso
+                    </section>
+                    <section className={styles.boxInscricao}>
+                        <EventInfo />
+                        <button className={styles.button}>Faça sua inscrição</button>
+                    </section>
+                </div>
+            </main>
         )
     }
 }

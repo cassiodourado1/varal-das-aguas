@@ -1,0 +1,50 @@
+:root {
+    --azul: #1b546f;
+    --branco: #FFF;
+}
+
+.home {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+/* .container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    
+    border: 1px red solid;
+} */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: -5rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: concurso inscriciao;
+    grid-column-gap: 10px;
+    background: #FFF;
+}
+
+.concurso {
+    grid-area: concurso;
+    grid-column: 1 / 6;
+}
+
+.boxInscricao {
+    grid-area: inscricao;
+    grid-column: 6 / 11;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button {
+    background: var(--azul);
+    color:var(--branco);
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}

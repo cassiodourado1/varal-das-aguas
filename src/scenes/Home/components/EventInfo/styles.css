@@ -1,0 +1,13 @@
+:root {
+    --azul: #1b546f;
+    --branco: #FFF;
+}
+
+.eventInfo {
+    max-width: 220px;
+    background: var(--azul);
+    color: var(--branco);
+    padding: 1rem 2rem;    
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+}
