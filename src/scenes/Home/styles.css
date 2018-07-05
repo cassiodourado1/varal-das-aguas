@@ -45,6 +45,7 @@
     composes: sections;  
 }
 
+
 .titleSection {
     width: 100%;
     text-align: center;
@@ -72,6 +73,7 @@
     grid-row: 1; 
     composes: sections;  
 }
+
 
 .sobre {
     grid-area: sobre;
@@ -212,4 +214,29 @@
     background: var(--send-file);
     color: var(--branco);
     cursor: pointer;
+}
+
+/* FIM MODAL */
+
+
+@media only screen and (max-width : 767px) {
+    .sections{        
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .concurso {
+        grid-column: 1 / 11;
+        grid-row: 2; 
+    }
+
+    .boxInscricao {
+        grid-column: 1 / 11;        
+    }
+
+    .sobre {
+        grid-row: 3;
+    }
+    .regras{
+        grid-row: 4;
+    }
 }

@@ -39,7 +39,10 @@
   }
 
 
-.title {
-    font-weight: 900;
-    color: red;
+
+@media only screen and (max-width : 767px) {
+  .menu {
+      max-width: 100%;
+      padding: 0 0.5rem;
+  }
 }
